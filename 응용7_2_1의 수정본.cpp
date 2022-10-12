@@ -100,9 +100,9 @@ void print_number(int n, int cnt[], int v)
 			}
 			printf("\n");
 		}
-		for(int i = 0; i < 5; i++)
+		for(int i = 0; i < v; i++)
 		{
-			for(int j = i+1; j < 5; j++)
+			for(int j = i+1; j < v; j++)
 			{
 				if(cnt[i] == cnt[j])
 				{
