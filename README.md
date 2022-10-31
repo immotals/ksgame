@@ -4,5 +4,6 @@
  2. foundation
  3. semantic ui
  # netify adrress
- https://inspiring-taffy-ee4063.netlify.app/
+ https://inspiring-taffy-ee4063.netlify.app
+ 
  https://immotals.github.io/ksgame/
