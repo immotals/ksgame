@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <body>
+    <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+    <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+    <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
+
+    <script>
+    var xValues = ["50대이상", "40대", "30대", "20대", "10대"];
+    var yValues = [28.7, 21.3, 19.4, 17.2, 13.4];
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+    
+    new Chart("myChart1", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "세대별 유튜브 이용 현황"
+        }
+      }
+    });
+    </script>
+    
+
+
+    
+
+    <script>
+    var xValues = ["4시간이상", "3시간이상 4시간미만", "2시간이상 3시간미만", "1시간이상 2시간미만", "1시간 미만"];
+    var yValues = [57, 20, 16, 6, 1];
+    var barColors = ["red", "green","blue","orange","brown"];
+
+    new Chart("myChart2", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+        }]
+    },
+    options: {
+        legend: {display: false},
+        title: {
+        display: true,
+        text: "10대 청소년의 스마트폰 이용 시간"
+        }
+    }
+    });
+    </script>
+
+
+
+    
+
+    <script>
+    var xValues = ["기타", "생활", "커뮤니케이션", "게임", "엔터테인먼트"];
+    var yValues = [29, 15, 16, 20, 20];
+    var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+    ];
+
+    new Chart("myChart3", {
+    type: "pie",
+    data: {
+        labels: xValues,
+        datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+        }]
+    },
+    options: {
+        title: {
+        display: true,
+        text: "성인의 앱 카테고리별 이용 현황"
+        }
+    }
+    });
+    </script>
+
+    </body>
+</html>
